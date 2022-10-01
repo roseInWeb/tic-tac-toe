@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    font-family: Syne Tactile;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1440px;
+    background-image: url(./assets/star.jpg);
+    color:#cdc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-top: 15px;
+    font-size: 50px;
+    text-align: center;
+    float: none;
+}
+
+button {
+    margin-top: 15px;
+    font-size: 35px;
+    background-color: gold;
+    border: 0;
+    border-radius: 15px;
+    padding: 5px 15px;
+    cursor: pointer;
+    display: flex;
+    transition: 1s;
+}
+
+.button {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+button:hover {
+    background-color: goldenrod;
+    border-radius: 20px;
+}
+
+.second {
+    margin-top: 15px;
+    width: 423px;
+    height: 423px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5px;
+}
+
+.box {
+    width: 140px;
+    height: 140px;
+    background-color: aqua;
+    /* color:rgb(94, 0, 172); */
+    color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 95px;
+    font-family: Festive;
+}
+
+.box:hover {
+    background-color: rgb(5, 229, 236);
+}
+
+#modal-result-wrapper {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    display: none;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-image: url(./assets/star.jpg);
+    left: 0;
+    top:0;
+}
+
+#modal-window {
+    width: 350px;
+    height: 300px;
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+}
+
+#content {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+}
+
+#btn-close {
+    width: 350px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+footer {
+    max-width: 1440px;
+    height: 55px;
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 25px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-weight: 500;
+}
+
+.copyright {
+    padding-right: 20px;
+}
+
+.github {
+    padding: 0 20px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: #cdcdcd;
+}
+
+.footer-logo {
+    background-image: url(assets/rss.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.3s;
+    height: 50px;
+    width: 135px;
+    margin-left: auto;
+    filter: invert(24%) sepia(0%) saturate(53%) hue-rotate(172deg) brightness(97%) contrast(93%);
+
+}
+
+a:hover {
+    filter: invert(0%) sepia(0%) saturate(53%) hue-rotate(172deg) brightness(97%) contrast(93%);
+    color:white;
+}
+
+@media (max-width: 450px) {
+    .second {
+        width: 303px;
+        height: 303px;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 325px) {    
+    .second {
+        width: 213px;
+        height: 213px;
+    }
+
+    .box {
+        width: 70px;
+        height: 70px;
+        font-size: 50px;
+    }
+
+    #content {
+        font-size: 25px;
+        height: 150px;
+        width: 200px;
+    }
+
+    #btn-close {
+        font-size: 25px;
+    }
+
+    h1 {
+        margin-top: 10px;
+        font-size: 35px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+    .footer-logo {
+        height: 25px;
+        width: 67.5px;
+    }
+
+    button {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+}
