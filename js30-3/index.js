@@ -12,7 +12,6 @@ block.addEventListener('click', e => {
     if (e.target.className = 'box') {
         move % 2 === 0 ? e.target.innerHTML = 'x' : e.target.innerHTML = '0';
         move++;
-        audio.play();
         check();
     }
 });
